@@ -1,97 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/style.css">
-  </head>
-
-  <body>
-    <!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Website</title>
-
-    <link rel="stylesheet" href="./style.css">
+<title>Kosi | Web Developer & Designer</title>
+<link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-
-    <h1>Kosi's Website</h1>
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-  <section id="home">
-    <h2>Home</h2>
-    <div class="hero">
-      <p class="hero-tag">WEB DEVELOPER • DESIGNER • CREATOR</p>
-<h1>Hi, I'm Kosi 👋</h1>
-  <p>I build websites, learn new skills, and turn ideas into reality.</p>
-    <a href="#projects" class="hero-btn">View My Work</a>
-</div>
-</section>
-
-<section id="about" class="profile">
-    <h2>About Me</h2>
-  <img src="https://picsum.photos/300" alt="A random photo">
-  <h3>Kosi</h3>
-    <p><p>I'm a beginner web developer learning HTML, CSS and JavaScript. I'm building my skills and creating projects from scratch.</p>
-  <p>Currently learning: Web Design, JavaScript and Graphic Design.</p>
-  <a href="mailto:Nnabugwukosiso@gmail.com" class="contact-btn">Contact Me</a>
-</section>
-<section id="skills">
-    <h2>My Skills</h2>
-
-    <p>HTML</p>
-    <p>CSS</p>
-    <p>JavaScript</p>
-  <p>Graphic Design</p>
-  <p>Web Development</p>
-</section>
-<section id="projects">
-    <h2>Projects</h2>
-    <a href="https://www.google.com." class="project-card">
-    <h3>My First Website</h3>
-    <p>This is the first website I built while learning HTML, CSS and JavaScript.</p>
-<a href="https://www.google.com" class="project-link">View Project →</a>
-  <div class="project-card">
-    <h3>My Portfolio</h3>
-    <p>A personal portfolio website I'm building to showcase my work and skills.</p>
-<a href="https://www.google.com" class="project-link">View Project →</a>
-</div>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Want to get in touch? Send me a message.</p>
-  <a href="#contact" class="contact-btn">Contact Me</a>
-</section>
-    <p>I'm learning how to build websites from scratch..</p>
-
-    <p>This is my first website, and I'm learning how to build websites.</p>
-
-    <button>Click Me</button>
-
-    <a href="https://www.tiktok.com">Visit TikTok</a>
-
-
+<!-- Navigation -->
+<header class="header">
+    <nav class="navbar">
+        <a href="#home" class="logo">Kosi.</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+<!-- Home -->
+<main>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="hero-tag">WEB DEVELOPER • DESIGNER • CREATOR</p>
+            <h1>Hi, I'm <span>Kosi</span> 👋</h1>
+            <p class="hero-text">
+                I build websites, learn new skills, and turn ideas into reality.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="hero-btn">View My Work</a>
+                <a href="#contact" class="secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://picsum.photos/500/500" alt="Kosi workspace">
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="section profile">
+        <p class="section-tag">GET TO KNOW ME</p>
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://picsum.photos/400/500" alt="Kosi">
+            <div class="about-text">
+                <h3>I'm Kosi 👋</h3>
+                <p>
+                    I'm a beginner web developer learning HTML, CSS and JavaScript.
+                    I'm building my skills and creating projects from scratch.
+                </p>
+                <p>
+                    Currently learning: Web Design, JavaScript and Graphic Design.
+                </p>
+                <a href="#contact" class="contact-btn">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <p class="section-tag">WHAT I DO</p>
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Building the structure of modern websites.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Creating clean and responsive designs.</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Adding interaction and functionality to websites.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Graphic Design</h3>
+                <p>Learning to create attractive visual designs.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>Combining everything to build complete websites.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <p class="section-tag">MY WORK</p>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://picsum.photos/600/400?random=1" alt="My first website">
+                <div class="project-content">
+                    <h3>My First Website</h3>
+                    <p>
+                        This is the first website I built while learning
+                        HTML, CSS and JavaScript.
+                    </p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://picsum.photos/600/400?random=2" alt="Portfolio website">
+                <div class="project-content">
+                    <h3>My Portfolio</h3>
+                    <p>
+                        A personal portfolio website I'm building to showcase
+                        my work and skills.
+                    </p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+        <p class="section-tag">GET IN TOUCH</p>
+        <h2>Let's Work Together</h2>
+        <p>
+            Have a question, idea, or project? I'd love to hear from you.
+        </p>
+        <a href="mailto:Nnabugwukosiso@gmail.com" class="contact-btn">
+            Send Me an Email
+        </a>
+        <div class="contact-links">
+            <a href="mailto:Nnabugwukosiso@gmail.com">Email</a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+    </section>
+</main>
+<!-- Footer -->
 <footer>
     <p>© 2026 Kosi. All rights reserved.</p>
+    <a href="#home" class="top-btn">↑ Back to Top</a>
 </footer>
-  <a href="#home" class="top-btn">↑ Back to Top</a>
 <script src="./script.js"></script>
 </body>
-</html>
-
-    <script src="/script.js"></script>
-  </body>
-
 </html>
