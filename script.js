@@ -37,5 +37,10 @@ const footerText = document.querySelector("footer p");
 
 if (footerText) {
     footerText.textContent =
-        `© ${new Date().getFullYear()} Kosi. All rights reserved.`;
-}
+        `© ${new Date().getFullYear()} Kosi. All rights // Mobile navigation menu
+const menuBtn = document.getElementById("menu-btn");
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});
