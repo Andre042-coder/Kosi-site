@@ -1,15 +1,18 @@
-// Smooth reveal animation
+// Scroll reveal animations
 const sections = document.querySelectorAll("section");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
-    });
-}, {
-    threshold: 0.15
-});
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
 
 sections.forEach((section) => {
     section.classList.add("hidden");
@@ -17,7 +20,7 @@ sections.forEach((section) => {
 });
 
 
-// Back-to-top button
+// Back to top button
 const topButton = document.querySelector(".top-btn");
 
 window.addEventListener("scroll", () => {
@@ -29,9 +32,10 @@ window.addEventListener("scroll", () => {
 });
 
 
-// Current year in footer
+// Automatically update the copyright year
 const footerText = document.querySelector("footer p");
 
 if (footerText) {
-    footerText.textContent = `© ${new Date().getFullYear()} Kosi. All rights reserved.`;
+    footerText.textContent =
+        `© ${new Date().getFullYear()} Kosi. All rights reserved.`;
 }
